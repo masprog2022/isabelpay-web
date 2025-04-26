@@ -10,8 +10,10 @@ export const AuthService = {
     email: string;
     password: string;
   }): Promise<LoginResponse> {
+    const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
     try {
-      const response = await fetch("http://localhost:8083/auth/login", {
+      const response = await fetch(`${API_URL}/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

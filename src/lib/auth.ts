@@ -14,9 +14,9 @@ interface UserData {
   roles?: string[];
 }
 
-export function getCurrentUser(): UserData | null {
+export async function getCurrentUser(): Promise<UserData | null> {
   try {
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const token = cookieStore.get("token")?.value;
     const userName = cookieStore.get("userName")?.value;
 

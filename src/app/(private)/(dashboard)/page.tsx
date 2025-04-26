@@ -220,7 +220,7 @@ export default function DashboardPage() {
               <p className="text-xs text-gray-600">
                 {isLoadingDebtors || errorDebtors
                   ? "Carregando..."
-                  : `${debtorsSummary.debtorsPercentage}% de moradores com dívida`}
+                  : `${debtorsSummary.debtorsPercentage}% de moradores com dívidas`}
               </p>
             </CardContent>
           </Card>

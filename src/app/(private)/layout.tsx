@@ -22,7 +22,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Isabelpay",
-  description: "Dashboard para gestão de pagamentos de quotas da vila Ssabel",
+  description: "Sistema para gestão de pagamentos de quotas da vila Isabel",
 };
 
 export default function PrivateLayout({
